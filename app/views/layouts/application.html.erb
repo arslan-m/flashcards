@@ -5,15 +5,14 @@
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-  <body>
+    <body>
    	    <section id="container">
 	     <header class="clearfix">
 	      <h1>Флэшкарточкер</h1>
-	      <ul class="navigation-links">
-	        <li><a href="#">Все карточки</a></li>
-	        <li><a href="#">Добавить карточку</a></li>
-	      </ul>
+	  	    <ul class="nav nav-tabs">
+ 		<li role="presentation"><a href="#">Все карточки</a></a></li>
+  		<li role="presentation"><a href="#">Добавить карточку</a></li>
+			</ul>
 	     </header>
 	     <%= yield %>
 	    </section>
